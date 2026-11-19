@@ -1,0 +1,11 @@
+# Only the website is published in this repository.
+/*
+!/site/
+!/docs/
+!/README.md
+!/.gitignore
+!/preview-server.py
+
+.DS_Store
+.env*
+node_modules/
