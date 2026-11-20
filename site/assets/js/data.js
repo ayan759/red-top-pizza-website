@@ -67,7 +67,7 @@ window.RTP = {
      on: false hides it everywhere. code: "" when customers don't need a promo code.
      img: a photo name from assets/img/menu (optional). */
   promo: {
-    on: true,
+    on: false,
     title: "Free Chocolate Lava Cake",
     detail: "Spend $40 or more and get a Chocolate Lava Cake free. Enter code FREELAVA40 at checkout when you order pickup online.",
     short: "Free Chocolate Lava Cake on orders of $40+ with code FREELAVA40.",

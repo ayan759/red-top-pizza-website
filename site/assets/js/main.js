@@ -201,6 +201,7 @@
   if (promo && !promoOn) {
     promo.hidden = true;
   } else if (promo) {
+    promo.hidden = false;
     $("[data-promo-title]", promo).textContent = P.title;
     $("[data-promo-detail]", promo).textContent = P.detail || "";
     const img = $("[data-promo-img]", promo);
