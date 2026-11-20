@@ -69,9 +69,9 @@ window.RTP = {
   promo: {
     on: true,
     title: "Free Chocolate Lava Cake",
-    detail: "Get a free Chocolate Lava Cake when you order $40 or more for pickup online.",
-    short: "Free Chocolate Lava Cake on orders of $40+.",
-    code: "",
+    detail: "Spend $40 or more and get a Chocolate Lava Cake free. Enter code FREELAVA40 at checkout when you order pickup online.",
+    short: "Free Chocolate Lava Cake on orders of $40+ with code FREELAVA40.",
+    code: "FREELAVA40",
     img: "lava-cake"
   },
 
