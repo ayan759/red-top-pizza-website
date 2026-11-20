@@ -190,11 +190,29 @@
   }
 
   /* ---------- Home: promo and bundles ---------- */
+  const P = D.promo || {};
+  const promoOn = P.on !== false && !!P.title;
+  // Short line in the order popup and on the menu page
+  $$("[data-promo-short]").forEach((el) => {
+    el.hidden = !(promoOn && P.short);
+    if (!el.hidden) el.textContent = " " + P.short;
+  });
   const promo = $("[data-promo]");
-  if (promo) {
-    $("[data-promo-title]", promo).textContent = D.promo.title;
-    $("[data-promo-detail]", promo).textContent = D.promo.detail;
-    $("[data-promo-code]", promo).textContent = D.promo.code;
+  if (promo && !promoOn) {
+    promo.hidden = true;
+  } else if (promo) {
+    $("[data-promo-title]", promo).textContent = P.title;
+    $("[data-promo-detail]", promo).textContent = P.detail || "";
+    const img = $("[data-promo-img]", promo);
+    if (img) {
+      img.hidden = !P.img;
+      if (P.img) { img.src = `assets/img/menu/${P.img}.webp`; img.alt = P.title; }
+    }
+    const codeRow = $("[data-promo-code-row]", promo);
+    if (codeRow) codeRow.hidden = !P.code;
+    $("[data-promo-code]", promo).textContent = P.code || "";
+  }
+  if (promo && promoOn && P.code) {
     const copyBtn = $("[data-copy-code]", promo);
     const label = $("span", copyBtn);
     copyBtn.addEventListener("click", async () => {

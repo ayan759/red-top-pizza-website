@@ -434,6 +434,9 @@ button { cursor: pointer; }
 .ticket::before { left: -13px; }
 .ticket::after { right: -13px; }
 .ticket h3 { font-size: var(--step-3); font-stretch: 125%; font-weight: 850; line-height: 1; }
+.ticket[hidden], .ticket [hidden] { display: none; }
+.ticket-photo { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; border-radius: var(--r-control); }
+.deals-grid:has(> .ticket[hidden]) { grid-template-columns: 1fr; }
 .ticket-code {
   display: flex; align-items: center; justify-content: space-between; gap: var(--s-2);
   margin-top: var(--s-2); padding: var(--s-2) 0 0;

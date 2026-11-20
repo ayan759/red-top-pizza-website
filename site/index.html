@@ -19,7 +19,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap">
   <link rel="preload" as="image" href="assets/img/hero-1400.webp" imagesrcset="assets/img/hero-900.webp 900w, assets/img/hero-1400.webp 1400w, assets/img/hero-2000.webp 1983w" imagesizes="100vw" media="(min-width: 761px)">
-  <link rel="stylesheet" href="assets/css/styles.css?v=9">
+  <link rel="stylesheet" href="assets/css/styles.css?v=10">
   <script>document.documentElement.classList.add("js");</script>
   <script type="application/ld+json">
   {
@@ -229,11 +229,12 @@
         </div>
         <div class="deals-grid">
           <div class="ticket" data-promo data-reveal="rise">
+            <img class="ticket-photo" data-promo-img src="assets/img/menu/lava-cake.webp" alt="Chocolate Lava Cake" width="720" height="480" loading="lazy">
             <p class="muted" style="margin:0;font-weight:700">Current promotion</p>
-            <h3 data-promo-title>10% off your entire order</h3>
-            <p class="muted" data-promo-detail>Enter code SAVE10 at checkout when you order pickup online.</p>
-            <div class="ticket-code">
-              <strong data-promo-code>SAVE10</strong>
+            <h3 data-promo-title>Free Chocolate Lava Cake</h3>
+            <p class="muted" data-promo-detail>Get a free Chocolate Lava Cake when you order $40 or more for pickup online.</p>
+            <div class="ticket-code" data-promo-code-row hidden>
+              <strong data-promo-code></strong>
               <button class="copy-btn" type="button" data-copy-code>
                 <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#copy"></use></svg>
                 <span>Copy code</span>
@@ -547,7 +548,7 @@
     <div class="order-options">
       <a class="order-option" href="https://order.toasttab.com/online/red-top-pizza-detroit-style-3950-sage-hill-drive-nw" data-pickup-link>
         <span class="icon-box"><svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#storefront"></use></svg></span>
-        <span><strong>Pickup</strong><span class="small">Order on Toast and collect at Sage Hill. Use code SAVE10 for 10% off.</span></span>
+        <span><strong>Pickup</strong><span class="small">Order on Toast and collect at Sage Hill.<span data-promo-short> Free Chocolate Lava Cake on orders of $40+.</span></span></span>
       </a>
       <a class="order-option" href="https://order.online/store/red-top-pizza---detroit-style-calgary-29682488/?hideModal=true" data-delivery-link>
         <span class="icon-box"><svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#moped"></use></svg></span>
@@ -560,7 +561,7 @@
     </div>
   </dialog>
 
-  <script src="assets/js/data.js?v=3" defer></script>
-  <script src="assets/js/main.js?v=7" defer></script>
+  <script src="assets/js/data.js?v=4" defer></script>
+  <script src="assets/js/main.js?v=8" defer></script>
 </body>
 </html>

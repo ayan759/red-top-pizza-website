@@ -63,10 +63,16 @@ window.RTP = {
      The review cards appear on the home page as soon as this list has at least one entry. */
   reviews: [],
 
+  /* Current deal: shown in the Deals section, the order popup on every page, and the menu page.
+     on: false hides it everywhere. code: "" when customers don't need a promo code.
+     img: a photo name from assets/img/menu (optional). */
   promo: {
-    code: "SAVE10",
-    title: "10% off your entire order",
-    detail: "Enter code SAVE10 at checkout when you order pickup online."
+    on: true,
+    title: "Free Chocolate Lava Cake",
+    detail: "Get a free Chocolate Lava Cake when you order $40 or more for pickup online.",
+    short: "Free Chocolate Lava Cake on orders of $40+.",
+    code: "",
+    img: "lava-cake"
   },
 
   bundles: [
